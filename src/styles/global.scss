@@ -1,0 +1,29 @@
+.site-wrapper {
+  display: flex;
+  @media (min-width: 540px) {
+    flex-wrap: wrap;
+  }
+  .routes-wraper {
+    &.dark {
+      @media (max-width: 540px) {
+        width: 79%;
+      }
+      flex: 1;
+      @media (min-width: 540px) {
+        padding: 0 16px;
+      }
+      background-color: #0f0f0f;
+    }
+
+    &.light {
+      @media (max-width: 540px) {
+        width: 79%;
+      }
+      flex: 1;
+      @media (min-width: 540px) {
+        padding: 0 16px;
+      }
+      background-color: white;
+    }
+  }
+}
